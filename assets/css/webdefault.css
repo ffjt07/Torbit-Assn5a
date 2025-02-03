@@ -182,6 +182,18 @@ select {
   border-radius: 5px;
 }
 
+.poll-label {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.poll-label input {
+  width: 20%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 /* IDs */
 #home {
   display: flex;
@@ -218,7 +230,8 @@ select {
   text-align: center;
 }
 
-#coming-soon {
+#vote-titles {
+  text-align: center;
   font-weight: bolder;
 }
 
@@ -293,6 +306,27 @@ select {
   width: 600px;
 }
 
+#poll {
+  display: flex;
+  justify-content: center;
+}
+
+#starter-poll {
+  min-width: 300px;
+  max-width: 500px;
+}
+
+#vote-btn {
+  background-color: red;
+  color: white;
+  font-size: 25px;
+  box-shadow: 0 5px 10px 0 rgb(144, 0, 0), 0 6px 20px 0 rgb(144, 0, 0);
+  border: red solid;
+  border-radius: 5px;
+  width: 100px;
+  margin: 15px;
+}
+
 /* Pseudo */
 nav a:hover {
   border-radius: 10px;
@@ -341,6 +375,15 @@ nav a:hover {
 }
 
 #reg-button:active {
+  box-shadow: none;
+}
+
+#vote-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+#vote-btn:active {
   box-shadow: none;
 }
 

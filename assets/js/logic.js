@@ -3,9 +3,7 @@ var openH = true;
 
 function workshopB() {
     const type2 = document.getElementById("type2");
-    const legend2 = document.getElementById("legend2");
     const session2 = document.getElementsByName("session-2");
-
 
     for (let i = 0; i < session2.length; ++i) {
         if (session2[i].checked && type2.checked) {
@@ -58,4 +56,14 @@ function errWindow(workshop) {
 function closeWin() {
     let currWin = open(location, '_self');
     currWin.close();
+}
+
+function thankYouAlert() {
+    const poll = document.getElementsByName("poll");
+    var selection;
+    for (let i = 0; i < poll.length; ++i) {
+        if (poll[i].checked) {
+            alert("Thank you for voting for: " + poll[i].value);
+        }
+    }
 }
