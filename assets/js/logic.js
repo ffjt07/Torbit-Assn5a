@@ -43,7 +43,7 @@ function errWindow(workshop) {
     var herrorUrl = "herror.html";
     var errWindow = window;
     var windowParams = `width=${winWidth}, height=${winHeight}, left=${left}, top=${top}`;
-    if (workshop == "B") { fd
+    if (workshop == "B") {
         errWindow.open(berrorUrl, "Error Window", windowParams);
         openB = false;
     }
