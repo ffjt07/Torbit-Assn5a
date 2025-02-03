@@ -164,6 +164,24 @@ select {
   width: auto;
 }
 
+.errorWin {
+  background-color: darkolivegreen;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.retrybtn {
+  width: 100px;
+  background-color: wheat;
+  color: darkolivegreen;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
 /* IDs */
 #home {
   display: flex;
