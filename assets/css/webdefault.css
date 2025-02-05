@@ -486,7 +486,11 @@ nav a:hover {
   }
 
   .sess-title {
-    max-width: 200px;
+    max-width: 135px;
+  }
+
+  #schedule {
+    font-size: 10px;
   }
 
   #convention-img img {
