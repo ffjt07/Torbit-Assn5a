@@ -41,14 +41,14 @@ function errWindow(workshop) {
     var left = (window.innerWidth -winWidth) / 2;
     var berrorUrl = "berror.html";
     var herrorUrl = "herror.html";
-    var errWindow = window;
+    var errorWindow = window;
     var windowParams = `width=${winWidth}, height=${winHeight}, left=${left}, top=${top}`;
     if (workshop == "B") {
-        errWindow.open(berrorUrl, "Error Window", windowParams);
+        errorWindow.open(berrorUrl, "Error Window", windowParams);
         openB = false;
     }
     else {
-        errWindow.open(herrorUrl, "Error Window", windowParams);
+        errorWindow.open(herrorUrl, "Error Window", windowParams);
         openH = false;
     }
 }
@@ -60,7 +60,6 @@ function closeWin() {
 
 function thankYouAlert() {
     const poll = document.getElementsByName("poll");
-    var selection;
     for (let i = 0; i < poll.length; ++i) {
         if (poll[i].checked) {
             alert("Thank you for voting for: " + poll[i].value);
