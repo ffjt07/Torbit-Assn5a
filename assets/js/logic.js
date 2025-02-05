@@ -19,8 +19,7 @@ function workshopH() {
     const evol3 = document.getElementById("evol3");
     const legend2 = document.getElementById("legend2");
 
-
-    if (!evol3.checked) {
+    if (!evol3.checked && legend2.checked) {
         legend2.checked = false;
         if (openH) {
             errWindow("H");
