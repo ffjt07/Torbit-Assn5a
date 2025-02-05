@@ -58,6 +58,15 @@ function closeWin() {
     currWin.close();
 }
 
+function evolCheck() {
+    const type2 = document.getElementById("type2");
+    const evol1 = document.getElementById("evol1");
+
+    if (type2.checked) {
+        evol1.removeAttribute("required");
+    }
+}
+
 function thankYouAlert() {
     const poll = document.getElementsByName("poll");
     for (let i = 0; i < poll.length; ++i) {
