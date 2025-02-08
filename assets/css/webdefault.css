@@ -164,7 +164,7 @@ select {
   width: auto;
 }
 
-.errorWin {
+.error-win {
   background-color: darkolivegreen;
   color: wheat;
   display: flex;
